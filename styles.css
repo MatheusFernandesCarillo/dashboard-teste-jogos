@@ -1,0 +1,185 @@
+/* Altera o fundo de toda a aplicação para #030063 */
+.stApp {
+    background-color: #030063 !important;
+}
+
+/* Remove fundo dos gráficos e containers */
+.css-1d391kg, .css-12oz5g7, .css-1v0mbdj, .element-container, .stMetric,
+.plotly-graph-div.js-plotly-plot, .js-plotly-plot, .plot-container,
+.main-svg, .bg, .gridlayer, .scrollbar-box {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Remove fundo dos gráficos Plotly especificamente */
+svg.main-svg {
+    background-color: transparent !important;
+}
+
+/* Remove bordas e sombras dos containers */
+.element-container, .stMetric {
+    border: none !important;
+    padding: 5px !important;
+}
+
+/* Estiliza os headers */
+h1, h2, h3 {
+    color: white !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+}
+
+/* Estiliza a sidebar */
+.css-1d391kg {
+    background: rgba(10, 10, 40, 0.9) !important;
+    backdrop-filter: blur(10px);
+}
+
+/* ========== ESTILOS PARA TODOS OS FILTROS ========== */
+
+/* Container principal de todos os seletores */
+.stSelectbox, .stMultiselect, .stNumberInput, .stTextInput {
+    background-color: transparent !important;
+}
+
+/* Fundo da caixa do seletor - TODOS OS FILTROS */
+.stSelectbox > div > div, 
+.stMultiselect > div > div,
+.stNumberInput > div > div,
+.stTextInput > div > div {
+    background-color: #2a2a4a !important;
+    border: 1px solid #4e36c9 !important;
+    border-radius: 8px !important;
+    color: white !important;
+}
+
+/* Texto dos labels - TODOS OS FILTROS */
+.stSelectbox label, 
+.stMultiselect label, 
+.stNumberInput label, 
+.stTextInput label {
+    color: white !important;
+    font-weight: 600;
+}
+
+/* Texto dentro das caixas de seleção e input */
+.stSelectbox div[data-baseweb="select"] div,
+.stMultiselect div[data-baseweb="select"] div,
+.stNumberInput input,
+.stTextInput input {
+    color: white !important;
+}
+
+/* Dropdown (lista de opções) */
+div[role="listbox"] {
+    background-color: #2a2a4a !important;
+    border: 1px solid #4e36c9 !important;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+/* Opções individuais no dropdown */
+div[role="listbox"] div {
+    background-color: #2a2a4a !important;
+    color: white !important;
+    padding: 10px;
+}
+
+/* Opção quando passar o mouse */
+div[role="listbox"] div:hover {
+    background-color: #4e36c9 !important;
+}
+
+/* Opção selecionada */
+div[role="option"][aria-selected="true"] {
+    background-color: #3a25a5 !important;
+    color: white !important;
+}
+
+/* Seta do dropdown */
+svg[title="Open"] {
+    fill: white !important;
+}
+
+/* Para garantir que todos os textos fiquem brancos */
+.stSelectbox span, 
+.stMultiselect span, 
+.stNumberInput span, 
+.stTextInput span {
+    color: white !important;
+}
+
+/* Placeholder dos inputs */
+input::placeholder {
+    color: #cccccc !important;
+    opacity: 1;
+}
+
+/* Estiliza os botões */
+.stButton > button {
+    background-color: #4e36c9 !important;
+    color: white !important; /* Mudei para branco para melhor contraste */
+    border-radius: 8px;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.stButton > button:hover {
+    background-color: #3a25a5 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estiliza as métricas */
+.stMetric {
+    text-align: center;
+    padding: 15px 10px;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Ajusta o texto dos labels */
+label, .stMarkdown p, .stMarkdown span {
+    color: white !important;
+    font-weight: 500;
+}
+
+/* Remove fundo das tabelas */
+.dataframe {
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Ajusta o texto das tabelas para melhor contraste */
+.dataframe th, .dataframe td {
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Abas */
+.stTabs [aria-selected="true"] {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    color: #030063 !important;
+}
+
+/* Itens selecionados no multiselect */
+div[data-baseweb="tag"] {
+    background-color: #4e36c9 !important;
+    color: white !important;
+    border-radius: 12px !important;
+}
+
+/* Ajuste para os valores dentro dos inputs */
+.stNumberInput input[type="number"],
+.stTextInput input[type="text"] {
+    background-color: transparent !important;
+    color: white !important;
+}
+
+/* Garantir que os valores nos inputs sejam visíveis */
+.stNumberInput input[type="number"]::value,
+.stTextInput input[type="text"]::value {
+    color: white !important;
+}
